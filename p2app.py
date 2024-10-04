@@ -45,7 +45,8 @@ logging.basicConfig(
 app = FastAPI()
 
 # Mount static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory=r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\static'), name="static")
+
 
 # Initialize templates
 templates = Jinja2Templates(directory="templates")
@@ -70,15 +71,15 @@ SPEECH_REGION = "eastus"
 
 # Load all the datasets into a list of DataFrames
 datasets = [
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Lifestyle-Related Diseases.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/disease_data.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Environmental Diseases.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Idiopathic.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Neoplastic Diseases.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/non-infectious diseases_data.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Nutritional Diseases.csv"),
-    pd.read_csv("D:/AI-Projects/FinalProject/P2/Psychiatric and Neurological Disorders.csv"),
-    pd.read_csv("D:\AI-Projects\FinalProject\P2\Rare Diseases.csv")
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Lifestyle-Related Diseases.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\disease_data.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Environmental Diseases.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Idiopathic.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Neoplastic Diseases.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\non-infectious diseases_data.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Nutritional Diseases.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Psychiatric and Neurological Disorders.csv'),
+    pd.read_csv(r'C:\Users\Anuval Mohan sai\Desktop\P2 actual\project-2\Rare Diseases.csv')
 ]
 
 # Combine all datasets into one DataFrame for easier searching

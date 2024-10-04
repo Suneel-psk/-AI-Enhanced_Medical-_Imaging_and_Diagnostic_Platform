@@ -6825,3 +6825,97 @@ Response headers:
 2024-10-01 16:37:45,109 - DEBUG - https://translate.google.com:443 "GET /m?tl=ta&sl=en&q=6+months+to+1+year%2C+depending+on+the+severity+and+type+of+TB. HTTP/11" 200 None
 2024-10-01 16:46:30,968 - DEBUG - Starting new HTTPS connection (1): directline.botframework.com:443
 2024-10-01 16:46:31,639 - DEBUG - https://directline.botframework.com:443 "POST /v3/directline/tokens/generate HTTP/11" 200 899
+2024-10-04 10:23:21,060 - DEBUG - Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2024-10-04 10:24:41,297 - DEBUG - Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2024-10-04 10:25:10,942 - DEBUG - Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2024-10-04 10:37:26,202 - DEBUG - Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2024-10-04 10:37:26,237 - DEBUG - Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2024-10-04 10:37:58,450 - DEBUG - Calling on_field_start with no data
+2024-10-04 10:37:58,451 - DEBUG - Calling on_field_name with data[0:8]
+2024-10-04 10:37:58,451 - DEBUG - Calling on_field_data with data[9:34]
+2024-10-04 10:37:58,451 - DEBUG - Calling on_field_end with no data
+2024-10-04 10:37:58,452 - DEBUG - Calling on_field_start with no data
+2024-10-04 10:37:58,452 - DEBUG - Calling on_field_name with data[35:53]
+2024-10-04 10:37:58,453 - DEBUG - Calling on_field_data with data[54:56]
+2024-10-04 10:37:58,453 - DEBUG - Calling on_field_end with no data
+2024-10-04 10:37:58,453 - DEBUG - Calling on_end with no data
+2024-10-04 10:37:59,223 - DEBUG - Detected Language: Norwegian
+2024-10-04 10:37:59,228 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2024-10-04 10:37:59,439 - DEBUG - https://translate.google.com:443 "GET /m?tl=en&sl=no&q=i+am+suffering+from+fever HTTP/11" 200 None
+2024-10-04 10:37:59,555 - INFO - Request URL: 'https://p2languageservice.cognitiveservices.azure.com/language/:analyze-text?api-version=2023-04-01'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '152'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9fe5a298-820e-11ef-8fe8-8c1645d89d5a'
+    'User-Agent': 'azsdk-python-ai-textanalytics/5.3.0 Python/3.12.5 (Windows-11-10.0.22631-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2024-10-04 10:37:59,559 - DEBUG - Starting new HTTPS connection (1): p2languageservice.cognitiveservices.azure.com:443
+2024-10-04 10:38:00,608 - DEBUG - https://p2languageservice.cognitiveservices.azure.com:443 "POST /language/:analyze-text?api-version=2023-04-01 HTTP/11" 200 205
+2024-10-04 10:38:00,610 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '205'
+    'Content-Type': 'application/json; charset=utf-8'
+    'csp-billing-usage': 'REDACTED'
+    'x-envoy-upstream-service-time': '4'
+    'Set-Cookie': 'REDACTED'
+    'apim-request-id': 'bca0c8c4-f060-467e-a40d-f6db0bfcb4c2'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'REDACTED'
+    'Date': 'Fri, 04 Oct 2024 05:08:00 GMT'
+2024-10-04 10:38:00,614 - DEBUG - Detected Language: English
+2024-10-04 10:38:00,617 - INFO - Request URL: 'https://p2languageservice.cognitiveservices.azure.com/language/:analyze-text?api-version=2023-04-01'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '186'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a0877cc5-820e-11ef-b162-8c1645d89d5a'
+    'User-Agent': 'azsdk-python-ai-textanalytics/5.3.0 Python/3.12.5 (Windows-11-10.0.22631-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2024-10-04 10:38:00,876 - DEBUG - https://p2languageservice.cognitiveservices.azure.com:443 "POST /language/:analyze-text?api-version=2023-04-01 HTTP/11" 200 376
+2024-10-04 10:38:00,877 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '376'
+    'Content-Type': 'application/json; charset=utf-8'
+    'csp-billing-usage': 'REDACTED'
+    'x-envoy-upstream-service-time': '12'
+    'Set-Cookie': 'REDACTED'
+    'apim-request-id': '9cf5e505-a798-4d1c-877a-f481bb057e44'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'REDACTED'
+    'Date': 'Fri, 04 Oct 2024 05:08:00 GMT'
+2024-10-04 10:38:00,879 - DEBUG - Sentiment: negative
+2024-10-04 10:38:00,881 - INFO - Request URL: 'https://p2languageservice.cognitiveservices.azure.com/language/:analyze-text?api-version=2023-04-01'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '151'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a0affc5a-820e-11ef-a537-8c1645d89d5a'
+    'User-Agent': 'azsdk-python-ai-textanalytics/5.3.0 Python/3.12.5 (Windows-11-10.0.22631-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2024-10-04 10:38:00,884 - DEBUG - Starting new HTTPS connection (1): p2languageservice.cognitiveservices.azure.com:443
+2024-10-04 10:38:01,747 - DEBUG - https://p2languageservice.cognitiveservices.azure.com:443 "POST /language/:analyze-text?api-version=2023-04-01 HTTP/11" 200 151
+2024-10-04 10:38:01,748 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '151'
+    'Content-Type': 'application/json; charset=utf-8'
+    'csp-billing-usage': 'REDACTED'
+    'x-envoy-upstream-service-time': '12'
+    'Set-Cookie': 'REDACTED'
+    'apim-request-id': '56310544-d763-436a-a0ad-c12104b8eca1'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'REDACTED'
+    'Date': 'Fri, 04 Oct 2024 05:08:01 GMT'
+2024-10-04 10:38:06,934 - DEBUG - Starting new HTTPS connection (1): directline.botframework.com:443
+2024-10-04 10:38:07,094 - DEBUG - https://directline.botframework.com:443 "POST /v3/directline/tokens/generate HTTP/11" 200 889
+2024-10-04 10:38:35,490 - DEBUG - Starting new HTTPS connection (1): directline.botframework.com:443
+2024-10-04 10:38:35,650 - DEBUG - https://directline.botframework.com:443 "POST /v3/directline/tokens/generate HTTP/11" 200 892
